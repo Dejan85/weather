@@ -1,0 +1,59 @@
+.home {
+  color: white;
+  &__h1 {
+    font-family: $font-2;
+    font-size: 14rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  &__h2 {
+    font-family: $font-2;
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color-6;
+  }
+
+  &__h3 {
+    font-family: $font-2;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: $color-6;
+  }
+
+  &__h4 {
+    font-family: $font-2;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: $color-6;
+  }
+
+  &__h5 {
+    font-family: $font-2;
+    font-size: 5rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  &__span {
+    color: $color-7;
+    font-family: $font-2;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &__degree {
+    color: $color-8;
+    font-family: $font-2;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  &__outsideweather {
+    color: $color-8;
+    font-family: $font-2;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
