@@ -1,0 +1,30 @@
+.menu {
+  position: absolute;
+  background: rgba(#000000, 0);
+  width: 100%;
+  //   height: auto;
+  z-index: 3;
+  transition: all 0.5s;
+  left: 0;
+  top: 0;
+
+  &__ul {
+    background: lighten($color-1, 4%);
+    width: 0rem;
+    height: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  &__li {
+    padding: 1rem 2.2rem;
+    // background: $color-3;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background: $color-9;
+      color: white;
+    }
+  }
+}
