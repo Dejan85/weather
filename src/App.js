@@ -10,12 +10,12 @@ import store from "./redux/store";
 
 function App() {
   return (
-    <div className="container">
-      <Provider store={store}>
+    <Provider store={store}>
+      <div className="container">
         <Header />
         <Home />
-      </Provider>
-    </div>
+      </div>
+    </Provider>
   );
 }
 

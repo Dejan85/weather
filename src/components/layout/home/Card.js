@@ -10,7 +10,7 @@ import icon5 from "../../../sass/images/icon5.jpg";
 const Card = ({ day, summary, temperature, icon }) => {
   const icons = { snow, rain };
 
-  console.log(summary);
+  // console.log(summary);
 
   return (
     <div className="home__card">

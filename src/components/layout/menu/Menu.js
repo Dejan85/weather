@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Menu = () => {
-  const [style, setStyle] = useState();
-  window.setTimeout(() => {
-    setStyle({
-      menu: { background: "rgba(#000000, 0.8)" },
-      ul: { width: "20rem" }
-    });
-  }, 100);
+const Menu = ({ background }) => {
+  const [style, setStyle] = useState({});
+  useEffect(() => {
+    setStyle({ width: "20rem" });
+  }, []);
   return (
-    <div className="menu" style={style && style.menu}>
-      <ul className="menu__ul" style={style && style.ul}>
+    <div className="menu">
+      <ul
+        className={`menu__ul ${background ? "menu__ulLight" : null} `}
+        style={style}
+      >
         <li className="menu__li">Home</li>
-        <li className="menu__li">Search</li>
+        {/* <li className="menu__li">Search</li> */}
         <li className="menu__li">Citys</li>
       </ul>
     </div>

@@ -8,6 +8,32 @@
   padding: 0 3rem;
   overflow: hidden;
 
+  background: #4da0b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    $color-2,
+    $color-3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    $color-2,
+    $color-3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &__lightBackground {
+    background: #4da0b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to bottom,
+      #63a6fd,
+      #5ee6df
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #63a6fd,
+      #5ee6df
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
   &__circle {
     position: absolute;
     width: 110rem;
@@ -25,6 +51,20 @@
       to bottom,
       $color-9,
       $color-10
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &__circleLight {
+    background: #4da0b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to bottom,
+      #f8f703,
+      #f8e210
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #f8f703,
+      #f8e210
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 

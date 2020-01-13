@@ -14,6 +14,7 @@ import useFetchApi from "../../hooks/global/useFetchApi";
 
 const Home = props => {
   const { menu } = props.menu;
+  const { background } = props.background;
   const { fetchApi, curently, daily } = useFetchApi();
 
   useEffect(() => {
@@ -23,9 +24,11 @@ const Home = props => {
   }, []);
 
   return (
-    <div className="home">
-      {menu && <Menu />}
-      <div className="home__circle" />
+    <div className={`home ${background ? "home__lightBackground" : null}`}>
+      {menu && <Menu background={background} />}
+      <div
+        className={`home__circle ${background ? "home__circleLight" : null}`}
+      />
       <div className="home__weather">
         <div className="home__header" style={{ background: `url(${img})` }}>
           <div className="home__info">
@@ -79,6 +82,9 @@ const Home = props => {
   );
 };
 
-const mapStateToProps = state => ({ menu: state.menu });
+const mapStateToProps = state => ({
+  menu: state.menu,
+  background: state.background
+});
 
 export default connect(mapStateToProps, null)(Home);

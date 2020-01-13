@@ -16,6 +16,14 @@
     overflow: hidden;
   }
 
+  &__ulLight {
+    background: $color-6;
+
+    li {
+      color: white;
+    }
+  }
+
   &__li {
     padding: 1rem 2.2rem;
     // background: $color-3;
